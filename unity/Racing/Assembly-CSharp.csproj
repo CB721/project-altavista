@@ -61,6 +61,7 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\Scripts\cameraStable.cs" />
      <Compile Include="Assets\Winter Zone Mini 1.0\Scripts\EmitterPositionController.cs" />
      <Compile Include="Assets\Winter Zone Mini 1.0\Scripts\FXDemoController.cs" />
      <None Include="Assets\_CustomShaders\FsSoftGrass.shader" />
