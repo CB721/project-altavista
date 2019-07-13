@@ -28,7 +28,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
     // alt method
     // use handlebars
-    res.send("../public/members.html", {data: {username: req.users.email}})
+    // res.send("../public/members.html", {data: {username: req.users.email}})
   });
 
 };
