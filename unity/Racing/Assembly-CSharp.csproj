@@ -61,6 +61,11 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\Winter Zone Mini 1.0\Scripts\EmitterPositionController.cs" />
+     <Compile Include="Assets\Winter Zone Mini 1.0\Scripts\FXDemoController.cs" />
+     <None Include="Assets\_CustomShaders\FsSoftGrass.shader" />
+     <None Include="Assets\Winter Zone Mini 1.0\readme.txt" />
+     <None Include="Assets\_CustomShaders\ReadMe.txt" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/clintbrodar/Class/Unity-Projects/Racing/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
