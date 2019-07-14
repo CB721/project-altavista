@@ -8,7 +8,6 @@ public class audioTrigger : MonoBehaviour
     public GameObject countDown;
     public AudioSource Soundtrack;
     public GameObject lapTimer;
-    public GameObject carControls;
     void Start()
     {
         StartCoroutine (countStart());
@@ -42,7 +41,6 @@ public class audioTrigger : MonoBehaviour
         countDown.SetActive(false);
 
         lapTimer.SetActive(true);
-        carControls.SetActive(true);
     }
 
 }
