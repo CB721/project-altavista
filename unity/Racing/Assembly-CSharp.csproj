@@ -72,11 +72,14 @@
      <Compile Include="Assets\Scripts\audioTrigger.cs" />
      <Compile Include="Assets\Scripts\cameraStable.cs" />
      <Compile Include="Assets\Scripts\dreamCar01Track.cs" />
+     <Compile Include="Assets\Scripts\finishRotate.cs" />
      <Compile Include="Assets\Scripts\halfPointTrigger.cs" />
      <Compile Include="Assets\Scripts\lapComplete.cs" />
      <Compile Include="Assets\Scripts\lapTimeManager.cs" />
      <Compile Include="Assets\Scripts\loadLapTime.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\raceFinish.cs" />
+     <Compile Include="Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
      <Compile Include="Assets\Winter Zone Mini 1.0\Scripts\EmitterPositionController.cs" />
      <Compile Include="Assets\Winter Zone Mini 1.0\Scripts\FXDemoController.cs" />
      <None Include="Assets\ErbGameArt\Procedural fire\Shaders\FireSphere.shader" />
