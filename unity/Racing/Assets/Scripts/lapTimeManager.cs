@@ -13,11 +13,13 @@ public class lapTimeManager : MonoBehaviour
     public GameObject minuteBox;
     public GameObject secondBox;
     public GameObject milliBox;
+    public static float Rawtime;
     // Update is called once per frame
     void Update()
     {
         // convert delta time to milliseconds
         milliCount += Time.deltaTime * 10;
+        Rawtime += Time.deltaTime;
         // formatting for milliseconds
         milliDisplay = milliCount.ToString("F0");
         // display milliseconds
