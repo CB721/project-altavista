@@ -31,12 +31,12 @@ canvas {
   font-size: 7px;   
   
   /* Set neon color */
-  --neon-text-color: #f40;
+  --neon-text-color:rgb(234, 6, 255);
   --neon-border-color: #08f;
 }
 
 body {
-  font-family: 'Exo 2', sans-serif;
+  font-family:'Jacques Francois Shadow', cursive;
   display: flex;
   justify-content: center;
   align-items: center;  
@@ -45,7 +45,7 @@ body {
 }
 
 h2 {
-  font-size: 13rem;
+  font-size: 9rem;
   font-weight: 200;
   font-style: italic;
   color: #fff;
@@ -101,4 +101,11 @@ h2:focus {
 
 label{
   color: #158cba;
+}
+
+#logOut{
+  padding-left: 1px;
+  padding-right: 1px;
+  width:10%;
+  text-align: center
 }
