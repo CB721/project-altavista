@@ -53,6 +53,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\RainMaker\Demo\DemoScript.cs" />
+     <Compile Include="Assets\RainMaker\Demo\DemoScript2D.cs" />
+     <Compile Include="Assets\RainMaker\Demo\DemoScriptStartRainOnSpaceBar.cs" />
+     <Compile Include="Assets\RainMaker\Prefab\BaseRainScript.cs" />
+     <Compile Include="Assets\RainMaker\Prefab\RainCollision.cs" />
+     <Compile Include="Assets\RainMaker\Prefab\RainScript.cs" />
+     <Compile Include="Assets\RainMaker\Prefab\RainScript2D.cs" />
+     <Compile Include="Assets\Realistic Hail Set\Demo Scene\Scripts\DemoSceneController.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -61,12 +69,26 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\Scripts\audioTrigger.cs" />
      <Compile Include="Assets\Scripts\cameraStable.cs" />
+     <Compile Include="Assets\Scripts\dreamCar01Track.cs" />
+     <Compile Include="Assets\Scripts\finishRotate.cs" />
+     <Compile Include="Assets\Scripts\halfPointTrigger.cs" />
+     <Compile Include="Assets\Scripts\lapComplete.cs" />
+     <Compile Include="Assets\Scripts\lapTimeManager.cs" />
+     <Compile Include="Assets\Scripts\loadLapTime.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\raceFinish.cs" />
+     <Compile Include="Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
      <Compile Include="Assets\Winter Zone Mini 1.0\Scripts\EmitterPositionController.cs" />
      <Compile Include="Assets\Winter Zone Mini 1.0\Scripts\FXDemoController.cs" />
+     <None Include="Assets\ErbGameArt\Procedural fire\Shaders\FireSphere.shader" />
      <None Include="Assets\_CustomShaders\FsSoftGrass.shader" />
+     <None Include="Assets\Realistic Hail Set\README.txt" />
      <None Include="Assets\Winter Zone Mini 1.0\readme.txt" />
+     <None Include="Assets\RainMaker\Prefab\RainShader.shader" />
      <None Include="Assets\_CustomShaders\ReadMe.txt" />
+     <None Include="Assets\RainMaker\Readme.txt" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/clintbrodar/Class/Unity-Projects/Racing/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
