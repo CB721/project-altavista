@@ -42,6 +42,7 @@ body {
   align-items: center;  
   background: #000;
   min-height: 100vh;
+  background-image: url("../img/img.jpg");
 }
 
 h2 {
@@ -160,8 +161,8 @@ nav {
   margin-left: 25%;
   color: #91c4d8;
   font-family:'Poiret One', cursive;
-  font-weight: bold;
-  font-size: 30px;
+  font-weight:800;
+  font-size: 32px;
   padding-bottom:13%;
 }
 
@@ -192,4 +193,21 @@ nav {
   font-family:'Poiret One', cursive;
   font-weight: bold;
   font-size:35px;
+}
+
+/* background particles */
+#container div {  
+  
+  border-radius:50%;
+  box-shadow:0 0 20px white;
+  position:absolute; 
+  
+}
+
+@keyframes pulse {
+  
+  from { 	transform: rotate(0deg) translateX(1px) rotate(0deg); 
+  }
+	to   {  transform: rotate(360deg) translateX(1px) rotate(-360deg); }
+  
 }
