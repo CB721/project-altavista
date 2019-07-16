@@ -1,5 +1,4 @@
 var passport = require("passport");
-// localstrategy used to check against our own database
 var LocalStrategy = require("passport-local").Strategy;
 
 var db = require("../models");
