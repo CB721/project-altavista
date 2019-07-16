@@ -103,6 +103,14 @@ h2:focus {
 label{
   color: #158cba;
 }
+input{
+  opacity: 0.2;
+  filter: alpha(opacity=50);
+}
+input:hover{
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
 
 
 
