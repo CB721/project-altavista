@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Sh0812O!",
-    "database": "Project_db",
+    "database": "Altavista",
     "host": "localhost",
     "dialect": "mysql"
   },
