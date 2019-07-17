@@ -8,9 +8,9 @@ module.exports = function(app) {
 
   app.get("/", function(req, res) {
     // If the user already has an account send them to the members page
-    // if (req.user) {
-    //   res.redirect("/members");
-    // }
+    if (req.user) {
+      res.redirect("/members");
+    }
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
 
@@ -29,13 +29,16 @@ module.exports = function(app) {
     }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
+
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/members", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
-    // alt method
-    // use handlebars
-    // res.send("../public/members.html", {data: {username: req.users.email}})
+  });
+
+  // Redirect to the URL for the game
+  app.get("/play", isAuthenticated, function(req, res) {
+      res.redirect("/game/galaxy-horizons/");
   });
 
 };
