@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "9z5-gwF-kBn-BCy",
-    "database": "burgers_db",
+    "password": "ziathegreat",
+    "database": "project_alta_vista",
     "host": "localhost",
     "dialect": "mysql"
   },
