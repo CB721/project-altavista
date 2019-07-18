@@ -2,26 +2,32 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
+  <title>Galaxy Horizons | Sign Up</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style2.css" rel="stylesheet">
+  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow|Londrina+Shadow&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  
+  <!-- stars -->
+  <div id="container"></div>
+  <!-- main -->
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h2>Sign Up Form</h2>
         <form class="signup">
             <div class="form-group">
-                <label for="exampleInputEmail1">First Name</label>
-                <input type="text" class="form-control" id="firstName-input" placeholder="first name">
-              </div><div class="form-group">
-                  <label for="exampleInputEmail1">Last Name</label>
-                  <input type="text" class="form-control" id="lastName-input" placeholder="last name">
+                <label for="exampleInputPassword1">First name</label>
+                <input type="text" class="form-control" id="firstName-input" placeholder="First name">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputPassword1">Last name</label>
+                  <input type="text" class="form-control" id="lastName-input" placeholder="Last Name">
                 </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
@@ -35,7 +41,7 @@
             <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
             <span class="sr-only">Error:</span> <span class="msg"></span>
           </div>
-          <button type="submit" class="btn btn-default">Sign Up</button>
+          <button type="submit" id="button" class="btn btn-default">Sign Up</button>
         </form>
         <br />
         <p>Or log in <a href="/login">here</a></p>
@@ -45,6 +51,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/signup.js"></script>
+  <!-- Reference to stars background -->
+  <script type="text/javascript" src="js/stars.js"></script>
+
 
 </body>
 
