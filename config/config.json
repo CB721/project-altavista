@@ -2,8 +2,8 @@
   "development": {
     "username": "root",
     "password": "ziathegreat",
-    "database":"project_alta_vista",
-    "host": "127.0.0.1",
+    "database": "project_alta_vista",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
