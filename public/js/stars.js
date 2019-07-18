@@ -17,7 +17,7 @@ function addStars() {
     let revOrNot = Math.floor(Math.random() * (2 ) + 1);
     let rev = 'normal';
     if (revOrNot == 1) rev = 'reverse';
-    console.log(i); 
+    // console.log(i); 
 
   let star = document.createElement("div");   
     star.style.cssText = "background-color: hsl("+randomColor+",100%,90%); top:"+randomTop+"px; left:"+randomLeft+"px; opacity:"+randomOpacity+"; animation-direction:"+rev+ "; width:"+randomSize+"px; height:"+randomSize+"px; animation: pulse linear "+randomDuration+"s infinite "+randomOpacity+"s;"; 
