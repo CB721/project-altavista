@@ -9,53 +9,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/videostyle.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
 
 </head>
 
 <body id="home">
- <div id = "container"></div>
-    <div class="container">
-        <h2 class="text-center">Hello! Wellcome to our Game!</h1>
-            <br>
-            <div class="container">
-                <br>
-                <h1>Create an acount to play!!</h3>
-                    <a href="/signup" id="nav" class="btn btn-secondary btn-sm">Sign Up</a>
-            </div>
-            <div class="container">
-                <br>
-                <h1>Already a User</h3>
-                    <a href="/login" id="nav" class="btn btn-secondary btn-sm">Log In</a>
-            </div>
-    </div>
-
-
-    <div class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="400">
-        <div class="container">
-            <div class="navbar-header">
-                <!-- <a href="#" class="navbar-brand">Galaxy Horizons</a> -->
-                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
-                <ul class="nav navbar-right navbar-nav">
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="badge">2</span></a>
-                    </li>
-                </ul>
-            </div>
+    <header class="section">
+        <div class="video-container">
+            <!-- video starts autiomatically -->
+            <!-- muted so browser does not block it -->
+            <video autoplay loop muted>
+                <source src="./video home page/assets/video/game-demo3.mp4" type="video/mp4">
+            </video>
         </div>
-    </div><!-- /.navbar -->
-    <script type="text/javascript" src="js/stars.js"></script>
+            <!-- overlay background -->
+            <div class="overlay"></div>
+            <div class="header-content">
+                <h2>Galaxy Horizons</h2>
+                <!-- link to sign up and login pages -->
+                <a href="/signup" id="nav" class="btn btn-secondary btn-sm">Sign Up</a>
+                <a href="/login" id="nav" class="btn btn-secondary btn-sm">Log In</a>
+            </div>
+        
+    </header>
+    </header>
 </body>
 
 </html>

@@ -1,3 +1,114 @@
+/* Home page video */
+{
+  box-sizing: border-box;
+} 
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section h2{
+  font-size: 6rem;
+  font-family:'Poiret One', cursive;
+  padding: 20px;
+  margin: 15px;
+  z-index: 2;
+  opacity: 0.7;
+} 
+ .section h2, .header-content{
+  font-size: 8rem;
+  font-family:'Poiret One', cursive;
+  padding: 20px;
+  margin: 15px;
+  z-index: 2;
+  opacity: 1;
+  margin-bottom: 17%;
+} 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #b3b5b4;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.05;
+  z-index: .5;
+}
+
+@keyframes bgcolor {
+  0% {
+      background-color: #27e6cd
+  }
+
+  30% {
+      background-color: #2793e6
+  }
+
+  60% {
+      background-color: #275ae6
+  }
+
+  90% {
+      background-color: #3127e6
+  }
+
+  100% {
+      background-color: #6727e6
+  }
+}
+
+
+.btn {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate; 
+  color: white;
+  font-size: 25px;
+  padding: 1rem 2rem;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+} 
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@media(max-width: 960px) {
+  .section {
+      padding-right: 3rem;
+      padding-left: 3rem;
+  }
+} 
+
+
+
+/* ---------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
 
 :root {
@@ -15,7 +126,6 @@ body {
   align-items: center;  
   background: #000;
   min-height: 100vh;
-  /* background-image: url("../img/img.jpg"); */
 }
 
 h2 {
@@ -117,7 +227,7 @@ input:hover{
 	position: relative;
   overflow: hidden;
   margin-left: 25%;
-  padding-bottom:1%;
+  margin-bottom:5%;
   
 
 }
@@ -247,6 +357,3 @@ input:hover{
   box-shadow: 671px 1868px #FFF , 1552px 792px #FFF , 260px 1595px #FFF , 118px 882px #FFF , 215px 1853px #FFF , 1901px 1267px #FFF , 170px 1161px #FFF , 1555px 772px #FFF , 1768px 1438px #FFF , 1931px 594px #FFF , 1312px 865px #FFF , 1158px 1758px #FFF , 1490px 1039px #FFF , 1407px 29px #FFF , 1393px 1382px #FFF , 228px 784px #FFF , 973px 1263px #FFF , 351px 1291px #FFF , 1053px 514px #FFF , 539px 306px #FFF , 785px 1747px #FFF , 1036px 1607px #FFF , 1559px 104px #FFF , 1786px 1153px #FFF , 1801px 1899px #FFF , 1900px 829px #FFF , 1943px 1656px #FFF , 439px 1926px #FFF , 306px 359px #FFF , 1648px 912px #FFF , 1256px 1545px #FFF , 1995px 1451px #FFF , 217px 664px #FFF , 1300px 12px #FFF , 742px 294px #FFF , 1045px 157px #FFF , 1850px 965px #FFF , 1384px 1374px #FFF , 105px 1765px #FFF , 1794px 449px #FFF , 510px 1430px #FFF , 624px 555px #FFF , 260px 1902px #FFF , 1499px 1981px #FFF , 1868px 1991px #FFF , 313px 308px #FFF , 1039px 1265px #FFF , 761px 288px #FFF , 941px 703px #FFF , 1421px 1018px #FFF , 305px 1476px #FFF , 1694px 937px #FFF , 1605px 1019px #FFF , 1984px 43px #FFF , 1592px 743px #FFF , 1986px 1065px #FFF , 400px 283px #FFF , 159px 647px #FFF , 1250px 49px #FFF , 557px 1544px #FFF , 129px 665px #FFF , 777px 1325px #FFF , 988px 1950px #FFF , 1355px 704px #FFF , 1974px 744px #FFF , 580px 1401px #FFF , 1662px 1444px #FFF , 438px 70px #FFF , 15px 450px #FFF , 883px 837px #FFF , 885px 51px #FFF , 378px 1777px #FFF , 1697px 630px #FFF , 668px 979px #FFF , 78px 421px #FFF , 1152px 1512px #FFF , 197px 411px #FFF , 1630px 1630px #FFF , 535px 1817px #FFF , 1517px 343px #FFF , 934px 1988px #FFF , 207px 1528px #FFF , 503px 421px #FFF , 344px 1048px #FFF , 1272px 658px #FFF , 485px 1431px #FFF , 1351px 1740px #FFF , 11px 345px #FFF , 1944px 817px #FFF , 697px 1075px #FFF , 1691px 1045px #FFF , 1794px 1627px #FFF , 1271px 163px #FFF , 163px 1779px #FFF , 873px 1471px #FFF , 953px 1005px #FFF , 997px 666px #FFF , 1358px 1918px #FFF , 1414px 807px #FFF , 1342px 1276px #FFF;
 }
 
-#nav{
-  margin-left:37%;
-}
