@@ -19,9 +19,9 @@ module.exports = function(app) {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       email: req.body.email,
-      password: req.body.password,
-      firstName: req.body.firstName,
-      lastName: req.body.lastName
+      password: req.body.password
+      // firstName: req.body.firstName,
+      // lastName: req.body.lastName
     })
       .then(function() {
         res.redirect(307, "/api/login");
@@ -30,7 +30,11 @@ module.exports = function(app) {
         res.status(401).json(err);
       });
   });
-
+  // app.get("/play", function(req, res){
+  //   // app.get("/play", isAuthenticated, function(req, res) {
+  //   res.redirect("/game/galaxy-horizons/");
+  // });
+  // });
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
