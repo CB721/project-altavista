@@ -11,9 +11,9 @@ $(document).ready(function() {
     event.preventDefault();
     var userData = {
       firstName: firstNameInput.val().trim(),
-      lastName: lastNameInput.val().trim(),
-      email: emailInput.val().trim(),
-      password: passwordInput.val().trim()
+      lastName: lastNameInput.val(),
+      email: emailInput.val(),
+      password: passwordInput.val()
     };
     console.log(userData);
     if (!userData.email || !userData.password) {
