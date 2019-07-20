@@ -30,6 +30,20 @@ module.exports = function(app) {
         res.status(401).json(err);
       });
   });
+
+  app.get("/api/users_profile", function(req, res) {
+    if (!req.user) {
+      res.text("cant find user");
+    } else {
+      res.json({
+        email: req.user.email,
+        firstName: req.user.firstName,
+        lastName: req.user.lastName,
+        id: req.user.id,
+        include: [db.Game]
+      });
+    }
+  });
   // app.get("/play", function(req, res){
   //   // app.get("/play", isAuthenticated, function(req, res) {
   //   res.redirect("/game/galaxy-horizons/");
