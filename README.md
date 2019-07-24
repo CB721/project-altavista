@@ -6,6 +6,8 @@ The player must get a fun experience: smooth movements, changing obstacles and p
 We have achieved a full functional minimalistic racing game.
 Functionality of the website and the game are the most important aspects.
 
+[View Project](https://guarded-retreat-41889.herokuapp.com/)
+
 **User stories**
 1) I want to different hear sound effects as I play.
 2) I want to see different environments and obstacles.
@@ -19,6 +21,9 @@ Functionality of the website and the game are the most important aspects.
 4) Best times page for all users
 5) User's best times page
 
+**Issues We Faced**
+
+
 **Technologies Used**
 HTML/CSS
 JavaScript/jQuery
@@ -26,4 +31,5 @@ SQL/Sequelize
 Node/Express
 Bycrypt
 Passport/Passport-local
+Unity
 C#
