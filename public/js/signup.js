@@ -5,27 +5,28 @@ $(document).ready(function() {
   var lastNameInput = $("input#lastName-input");
   var emailInput = $("input#email-input");
   var passwordInput = $("input#password-input");
-  console.log(firstNameInput);
+
   // When the signup button is clicked, we validate the email and password are not blank
   signUpForm.on("submit", function(event) {
     event.preventDefault();
     var userData = {
       firstName: firstNameInput.val().trim(),
-      lastName: lastNameInput.val(),
-      email: emailInput.val(),
-      password: passwordInput.val()
+      lastName: lastNameInput.val().trim(),
+      email: emailInput.val().trim(),
+      password: passwordInput.val().trim()
     };
-    console.log(userData);
     if (!userData.email || !userData.password) {
       return;
+    } else {
+      // If we have an email and password, run the signUpUser function
+      signUpUser(
+        userData.firstName,
+        userData.lastName,
+        userData.email,
+        userData.password
+      );
     }
-    // If we have an email and password, run the signUpUser function
-    signUpUser(
-      userData.firstName,
-      userData.lastName,
-      userData.email,
-      userData.password
-    );
+    // Set input values to blank
     firstNameInput.val("");
     lastNameInput.val("");
     emailInput.val("");
@@ -41,7 +42,7 @@ $(document).ready(function() {
       email: email,
       password: password
     })
-      .then(function(data) {
+      .then(function(memberData) {
         window.location.replace("/members");
         // If there's an error, handle it by throwing up a bootstrap alert
       })
