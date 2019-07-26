@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "9z5-gwF-kBn-BCy",
-    "database": "playlistDB",
+    "database": "wishes_db",
     "host": "localhost",
     "dialect": "mysql"
   },

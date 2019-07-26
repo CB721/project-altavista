@@ -28,6 +28,9 @@ module.exports = function(sequelize, DataTypes) {
     numberOfPlays: {
       type: DataTypes.INTEGER,
       defaultValue: 0
+    },
+    lastPlay: {
+      type: DataTypes.DATE
     }
   });
   User.associate = function(models) {
