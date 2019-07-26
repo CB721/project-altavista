@@ -22,14 +22,16 @@ Functionality of the website and the game are the most important aspects.
 5) User's best times page
 
 **Issues We Faced**
-
+1) Creatting on trigger events in the game results
+2) Learning C#
+3) Merging our branches
 
 **Technologies Used**
-HTML/CSS
-JavaScript/jQuery
-SQL/Sequelize
-Node/Express
-Bycrypt
-Passport/Passport-local
-Unity
-C#
+1) HTML/CSS
+2) JavaScript/jQuery
+3) SQL/Sequelize
+4) Node/Express
+5) Bycrypt
+6) Passport/Passport-local
+7) Unity
+8) C#
