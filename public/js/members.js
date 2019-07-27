@@ -36,12 +36,18 @@ $(document).ready(function () {
         nop: numberOfPlays
       }
     }).done(function(response){
-      console.log("Response from on click ajax call: " + response);
+      // reload cache
+      reloadCache();
       // navigate to game page
-      // window.location.href = "localhost:8080/play";
-      // console.log(response);
-      // console.log(location);
+      navigateToPage();
     });
+  }
+  function navigateToPage() {
+    location.href = "/play";
+  }
+  // reload cache
+  function reloadCache() {
+    location.reload(true);
   }
   // user delete account option
 });
