@@ -1,6 +1,9 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
+// import moment for referencing last time user logged in
+var moment = require('moment');
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -14,14 +17,11 @@ module.exports = function(app) {
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
   app.post("/api/signup", function(req, res) {
-    console.log(req.body.firstName);
     db.User.create({
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       email: req.body.email,
       password: req.body.password
-      // firstName: req.body.firstName,
-      // lastName: req.body.lastName
     })
       .then(function() {
         res.redirect(307, "/api/login");
@@ -30,25 +30,22 @@ module.exports = function(app) {
         res.status(401).json(err);
       });
   });
-
-  app.get("/api/users_profile", function(req, res) {
+  app.get("/api/users_profile/", isAuthenticated, function(req, res) {
     if (!req.user) {
-      res.text("cant find user");
+      res.text("Invalid User");
     } else {
       res.json({
         email: req.user.email,
         firstName: req.user.firstName,
         lastName: req.user.lastName,
         id: req.user.id,
+        numberOfPlays: req.user.numberOfPlays,
+        // get last time user logged in
         include: [db.Game]
       });
     }
   });
-  // app.get("/play", function(req, res){
-  //   // app.get("/play", isAuthenticated, function(req, res) {
-  //   res.redirect("/game/galaxy-horizons/");
-  // });
-  // });
+
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
@@ -64,9 +61,29 @@ module.exports = function(app) {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
+        firstName: req.user.firstName,
         email: req.user.email,
+        numberOfPlays: req.user.numberOfPlays,
         id: req.user.id
       });
     }
+  });
+
+  // PUT route for updating total times played. We can get the updated play data from req.body
+  app.put("/api/plays", isAuthenticated, function(req, res) {
+    // Update takes in an object describing the properties we want to update, and
+    // we use where to describe which objects we want to update
+    db.User.update(
+      {
+        numberOfPlays: req.body.nop
+      },
+      {
+        where: {
+          id: req.user.id
+        }
+      }
+    ).then(function(dbUser) {
+      res.json(dbUser);
+    });
   });
 };

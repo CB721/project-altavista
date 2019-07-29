@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Sh0812O!",
-    "database": "Alta",
+    "password": "9z5-gwF-kBn-BCy",
+    "database": "wishes_db",
     "host": "localhost",
     "dialect": "mysql"
   },

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Galxay Horizons | Members</title>
+  <title>Galxay Horizons | Profile</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
@@ -12,48 +12,41 @@
 </head>
 
 <body>
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
-    <div id='title'></div>
-    <div id = "container"></div>
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <div id='title'></div>
+  <div id="container"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h2 id="text">Welcome Player!</span></h2>
+        <!-- Players name taken from db -->
+        <h2 id="playerName"></h2>
+        <h1 id="timesPlayed"></h1>
+        <p id="noPlays"></p>
         <nav class="navbar navbar-default">
-            <div id="play" class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" id="navbar" href="/play">
-                  Play
-                </a>
-              </div>
-            </div>
-        </nav>
-        <nav class="navbar navbar-default">
-          <div id="profile" class="container-fluid">
+          <div id="play" class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" id="navbar" href="api/users_profile">
-                Profile
+              <a class="navbar-brand playCount" id="navbar" href="/play">
+                Play
               </a>
             </div>
           </div>
         </nav>
-            <nav class="navbar navbar-default">
-            <div id="logout" class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" id="navbar" href="/logout">
-                  Logout
-                </a>
-              </div>
+        <nav class="navbar navbar-default">
+          <div id="logout" class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" id="navbar" href="/logout">
+                Logout
+              </a>
             </div>
-          </nav>
-          <!-- <button type="submit" id="button" href="/play" class="btn btn-default">Start</button> -->
+          </div>
+        </nav>
       </div>
     </div>
   </div>
- 
-  
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
   <script type="text/javascript" src="js/stars.js"></script>

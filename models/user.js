@@ -5,7 +5,6 @@ var bcrypt = require("bcrypt-nodejs");
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define("User", {
     // The email cannot be null, and must be a proper email before creation
-
     firstName: {
       type: DataTypes.STRING,
       allowNull: false
@@ -22,23 +21,21 @@ module.exports = function(sequelize, DataTypes) {
         isEmail: true
       }
     },
-    // The password cannot be null
     password: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    numberOfPlays: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0
+    },
+    lastPlay: {
+      type: DataTypes.DATE
     }
-    // firstName: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false
-    // },
-    // lastName: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false
-    // }
   });
   User.associate = function(models) {
-    // Associating Author with Posts
-    // When an Author is deleted, also delete any associated Posts
+    // Associating User with Scores/times
+    // When an User is deleted, also delete any associated Scores/times
     User.hasMany(models.Game, {
       onDelete: "cascade"
     });
